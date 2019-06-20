@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="button1" layoutX="60.0" layoutY="53.0" mnemonicParsing="false" onAction="#button1click" text="File1" />
+            <Button fx:id="button2" layoutX="60.0" layoutY="128.0" mnemonicParsing="false" onAction="#button2click" text="File2" />
+            <TextField fx:id="textfield" layoutX="188.0" layoutY="192.0" prefHeight="30.0" prefWidth="97.0" />
+            <Text layoutX="36.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sensitivity(0-1) eg. 0.9 = 90% same" wrappingWidth="123.4208984375" />
+            <Button fx:id="submit" layoutX="51.0" layoutY="250.0" mnemonicParsing="false" onAction="#start" text="Submit" />
+            <Text fx:id="waiting" layoutX="51.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Waiting for inputs................. Output will be a .txt file based on inputs        eg. 0.9 sensitivity = sentences in file 1 and 2 that are over 90% same will be outputted." wrappingWidth="269.501953125" />
+            <Text layoutX="60.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please put 2 .docx files and sensitivity" />
+            <Text fx:id="path1" layoutX="152.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select a docx file" />
+            <Text fx:id="path2" layoutX="152.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select a docx file" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
